@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  caret-color: transparent;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   height: 100vh;
   display: flex;
   font-family: "Antic Didone", serif;
+  background-image: url(img/Background.png);
 }
 
 @font-face {
@@ -23,15 +25,12 @@ body {
   max-width: 650px;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
   text-align: center;
 
   margin: auto;
   padding: 50px 0;
-
-  background-image: url(img/Background.png);
   border-radius: 2%;
 }
 
@@ -45,13 +44,14 @@ main h1 {
 
 main p {
   font-size: 14px;
+  padding: 0 5px;
 }
 
 nav {
   display: flex;
   gap: 125px;
 
-  margin: 50px 125px 0;
+  margin-top: 50px;
 }
 
 nav a {
@@ -72,4 +72,13 @@ nav a p {
 a:visited {
   color: inherit; /* Define a cor do link como a cor padrão do texto */
   text-decoration: none; /* Remove qualquer decoração de texto adicional (como sublinhado) */
+}
+
+@media screen and (max-width: 415px) {
+    nav {
+  gap: 50px;
+}
+.page {
+    padding: 0;
+}
 }
