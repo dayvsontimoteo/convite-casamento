@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0efe7;
+  height: 100vh;
+  display: flex;
+  font-family: "Antic Didone", serif;
+}
+
+@font-face {
+  font-family: "Scriptina"; /* Dê um nome à sua fonte */
+  src: local("Scriptina"), url("fonts/Scriptina.ttf") format("ttf");
+  font-weight: 400; /* Peso da fonte (se aplicável) */
+  font-style: normal; /* Estilo da fonte (se aplicável) */
+}
+
+.page {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: auto;
+  padding: 50px 0;
+
+  background-image: url(img/Background.png);
+  border-radius: 2%;
+}
+
+main h1 {
+  margin: 50px 0 50px;
+  font-family: "Scriptina", cursive;
+  color: #385543;
+  font-size: 48px;
+  line-height: 103px;
+}
+
+main p {
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  gap: 125px;
+
+  margin: 50px 125px 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a p {
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#local {
+  margin-top: 2px;
+  color: black;
+}
+
+a:visited {
+  color: inherit; /* Define a cor do link como a cor padrão do texto */
+  text-decoration: none; /* Remove qualquer decoração de texto adicional (como sublinhado) */
+}
