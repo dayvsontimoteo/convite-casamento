@@ -34,12 +34,8 @@ body {
   border-radius: 2%;
 }
 
-main h1 {
+main img {
   margin: 50px 0 50px;
-  font-family: "Scriptina", cursive;
-  color: #385543;
-  font-size: 48px;
-  line-height: 103px;
 }
 
 main p {
